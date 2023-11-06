@@ -1,0 +1,42 @@
+# ESP8266 Message Board
+
+This is a simple ESP8266-based message board that allows users to post and view messages through a web interface. The board creates a Wi-Fi access point with the SSID "acesse 192.168.4.1" and provides a basic chat functionality.
+
+## Prerequisites
+
+Before using this code, ensure that you have the following libraries installed:
+
+- `ESP8266WiFi` - ESP8266 WiFi library.
+- `ESP8266WebServer` - ESP8266 Web server library.
+- `WiFiClient` - ESP8266 WiFi client library.
+
+## Hardware Setup
+
+- You need an ESP8266-based development board, such as the NodeMCU, ESP-12E, or ESP-01.
+- Connect the ESP8266 to your computer using a USB-to-Serial converter.
+- Flash the code to the ESP8266 using the Arduino IDE or another suitable tool.
+
+## Usage
+
+1. Flash the code to your ESP8266 device.
+2. Power up the ESP8266 device, and it will create a Wi-Fi access point named "acesse 192.168.4.1" without a password.
+3. Connect to the Wi-Fi network with this SSID.
+4. Open a web browser and go to `http://192.168.4.1`.
+5. You'll be directed to the chat interface where you can enter your name and start sending and receiving messages.
+6. Messages are displayed on the web page with usernames and timestamps.
+
+## Code Explanation
+
+- The code initializes the ESP8266 as a Wi-Fi access point without a password.
+- It uses the `ESP8266WebServer` library to handle web requests for the chat interface and message submissions.
+- Users can enter their name, send messages, and view the chat log.
+- Messages are stored in the `chatLog` variable.
+- The code provides a basic chat experience, and it can be extended and improved to fit specific requirements.
+
+## License
+
+This code is provided under the [MIT License](LICENSE).
+
+## Author
+
+- [vitor bentemiller]
